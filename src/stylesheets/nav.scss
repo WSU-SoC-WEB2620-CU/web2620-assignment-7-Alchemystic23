@@ -4,6 +4,16 @@ $color3: rgb(214, 214, 214);
 $color4: rgb(73, 182, 250);
 $color5: teal;
 $color6: blue;
+$shadow: rgba(0,0,0,0.1);
+
+$title: 2rem;
+$subtitle: 1.5rem;
+$paragraph: 1rem;
+
+body {
+    font-size: 16px;
+}
+
 
 .navbar {
     float: right;
@@ -11,25 +21,26 @@ $color6: blue;
     padding: 10px;
     border-bottom: 2px solid $color1;
     margin-right: 30px;
+
+    a {
+        font-size: $paragraph;
+        color: $color2;
+        padding: 10px;
+        text-decoration: none;
+        margin-left: 20px;
+        border-bottom: 2px solid $color1;
+
+        &.active {
+            color: rgb(58, 174, 247);
+            border-bottom: 2px solid $color6;
+        }
+
+        &:hover {
+            border-bottom: 2px solid $color6;
+        }
+    }
 }
 
-.navbar a {
-    font-size: 16px;
-    color: black;
-    padding: 10px;
-    text-decoration: none;
-    margin-left: 20px;
-    border-bottom: 2px solid $color1;
-}
-
-.navbar a.active { 
-    color: rgb(58, 174, 247); 
-    border-bottom: 2px solid $color6;
-}
-
-.navbar a:hover {
-    border-bottom: 2px solid $color6;
-}
 
 .logo {
     float: left;

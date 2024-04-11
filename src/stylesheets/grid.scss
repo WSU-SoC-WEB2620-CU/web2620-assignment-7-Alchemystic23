@@ -1,5 +1,18 @@
 $font1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+$color1: white;
+$color2: black;
+$color3: rgb(214, 214, 214);
+$color4: rgb(73, 182, 250);
+$color5: teal;
+$color6: blue;
+$shadow: rgba(0,0,0,0.1);
+
+$title: 2rem;
+$subtitle: 1.5rem;
+$paragraph: 1rem;
+
+
 .grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(200px, 1fr));
@@ -14,20 +27,20 @@ $font1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unic
     flex-flow: column nowrap;
     text-align: left;
     padding: 20px;
-    background-color: white;
+    background-color: $color1;
     margin-left: 40px;
     margin-right: 40px;
     border-radius: 10px;
 
     .title {
-        font-size: 2rem;
+        font-size: $title;
         font-weight: bold;
         margin-bottom: 0;
         margin-top: 10px;
     }
 
     .subtitle {
-        font-size: 1.2rem;
+        font-size: $subtitle;
         margin-top: 0;
     }
 
@@ -36,7 +49,8 @@ $font1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unic
     }
 
     &:hover {
-        box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+        box-shadow: 0 10px 10px $shadow;
+        ;
       }
   }
 
@@ -70,7 +84,7 @@ $font1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unic
 
   .item img{
     flex: 1;
-  max-width: calc(100% - 20px); 
+    max-width: calc(100% - 20px); 
   }
 
   .item#wide{
